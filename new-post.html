@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
-<body>
-    
+<body data-page="new-post">
+    <header>
+        <h1>Create / Edit Post</h1>
+        <nav><a href="index.html">&#x2190; Back to list</a></nav>
+    </header>
+    <main>
+        <form id="post-form">
+            <div>
+                <label for="title">Title</label><br>
+                <input type="text" id="title" required>
+            </div>
+            <div>
+                <label for="content">Content</label><br>
+                <textarea id="content" rows="10" required></textarea>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </main>
+   
 </body>
 </html>
